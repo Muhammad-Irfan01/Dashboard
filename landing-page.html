@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Horizontal Layout | Foxia - Responsive Bootstrap 5 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
+        <meta content="Themesbrand" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+        <style>
+           .btn_2:hover{
+            border: 1px solid #6E5AE3;
+            background-color: #fff;
+            color: #000 !important;
+           }
+            .btn_1:hover{
+                background-color: #6E5AE3 !important;
+                color: #fff;
+            }
+            .Container_Fluid{
+                max-width: 100% !important;
+            }
+        </style>
+    </head>
+
+    <body data-layout="horizontal" data-layout-size="boxed">
+
+        <!-- Loader -->
+        <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            <header id="page-topbar">
+                <div class="navbar-header mx-auto">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box d-block d-lg-none">
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="Logo Image" height="40">
+                                </span>
+                            </a>
+                        </div>
+           
+
+                        <button type="button" class="btn btn-sm me-2 font-size-24 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+
+                        <ul class="list-inline d-none d-lg-block mb-0">
+                            <li class="list-inline-item me-3 help-number">
+                                <span class="font-size-13 header-item">Help : +012 3456 789</span>
+                            </li>
+                    
+                
+                        </ul>
+
+                    </div>
+
+                    <!-- Search input -->
+                    <div class="search-wrap" id="search-wrap">
+                        <div class="search-bar">
+                            <input class="search-input form-control" placeholder="Search">
+                            <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                                <i class="mdi mdi-close-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+
+                        <div class="dropdown d-none d-lg-block">
+                            <button type="button" class="btn header-item toggle-search noti-icon waves-effect" data-target="#search-wrap">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                        </div>
+
+
+                        <div class="dropdown d-inline-block ms-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="m-0 font-size-16"> Notification (3) </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="mdi mdi-cart-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 font-size-15 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Dummy text of the printing and typesetting industry.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-danger rounded-circle font-size-16">
+                                                    <i class="mdi mdi-message-text-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 font-size-15 mb-1">New Message received</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">You have 87 unread messages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-info rounded-circle font-size-16">
+                                                    <i class="mdi mdi-glass-cocktail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 font-size-15 mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It is a long established fact that a reader will</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="mdi mdi-message-text-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 font-size-15 mb-1">New Message received</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">You have 87 unread messages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-warning rounded-circle font-size-16">
+                                                    <i class="mdi mdi-cart-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 font-size-15 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Dummy text of the printing and typesetting industry.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+                                </div>
+                                <div class="p-2 border-top">
+                                    <a class="btn btn-sm btn-link font-size-14 btn-block" href="javascript:void(0)">
+                                        View all
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block ms-2">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-6.jpg" alt="Header Avatar">
+                                <span class="d-none d-md-inline-block ms-1">Donald T. <i class="mdi mdi-chevron-down"></i> </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="dripicons-user font-size-16 align-middle me-2 text-muted"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="dripicons-wallet font-size-16 align-middle me-2 text-muted"></i> My Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">5</span><i class="dripicons-gear font-size-16 align-middle me-2 text-muted"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="dripicons-lock font-size-16 align-middle me-2 text-muted"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="dripicons-exit font-size-16 align-middle me-2 text-muted"></i> Logout</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                <i class="mdi mdi-spin mdi-cog"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="topnav">
+                    <div class="container-fluid">
+                        <div class="container d-flex">
+                            <!-- LOGO -->
+                            <div class="navbar-brand-box d-none d-lg-block">
+                                <a href="index.html" class="logo logo-light">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/logo-sm.png" alt="Logo Image" height="40">
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/logo.png" alt="Logo Image" height="45">
+                                    </span>
+                                </a>
+                            </div>
+
+                            <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                                <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                    <ul class="navbar-nav" style="margin-left: 120px;">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Home">
+                                                <i class="dripicons-meter me-2"></i>Home
+                                            </a>
+                                        </li>
+                        
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="#Feature" id="topnav-user-Interface" role="button">
+                                                <i class="dripicons-briefcase me-2"></i>Features
+                                                <!-- <div class="arrow-down"></div> -->
+                                            </a>
+                        
+                                            <!--  -->
+                                        </li>
+                        
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="#Tips" id="topnav-components" role="button">
+                                                <i class="dripicons-view-thumb me-2"></i>Tips
+                                                <!-- <div class="arrow-down"></div> -->
+                                            </a>
+                        
+                                        </li>
+                        
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="#Getting Started" id="topnav-advanced-ui" role="button">
+                                                <i class="dripicons-archive me-2"></i>Getting Started
+                                                <!-- <div class="arrow-down"></div> -->
+                                            </a>
+                                           
+                                        </li>
+                        
+                                    
+                        
+                        
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+    
+
+            </header>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+       
+
+            <div id="Home" class="container" style="margin-top: 100px;">
+                <div class="row d-flex flex-column justify-content-center align-items-center py-5">
+                    <div class="col-md-6 m-auto">
+                        <h1 class="display-6 fw-bolder text-center lh-base" style="">Instant Response and Faster Sales for Social Commerce with <span style="color: #6E5AE3;">VividMind</span></h1>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-center fs-5 text-muted py-3">An intelligent chatbot that enables social commerce merchants to respond instantly and close sales significantly faster!</p>
+                    </div>
+                    <div class="col-md-6 text-center d-flex justify-content-evenly">
+                        <button class="btn btn_1" style="border: 1px solid #6E5AE3;">Get Started</button>
+                        <button class="btn btn_2" style="background-color: #6E5AE3; color: #fff;">View Dashboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Feature" class="container" style="margin-top: 100px;">
+                <div class="row d-flex justify-content-between p-3 p-sm-0">
+                    <div class="col-md-12 text-center py-4">
+                        <h2 class="fw-bolder">Features Your Love</h2>
+                        <p class="text-muted">HIGHLIGHT</p>
+                    </div>
+                    <div class="col-md-3 d-flex flex-column flex-lg-row">
+                        <i class="bi bi-pencil-square fs-2 w-lg-75 h-lg-75 w-25 h-25 m-2" style=" color: #6E5AE3;"></i>
+                        <div>
+                            <h3 class="fw-bolder">Customize</h3>
+                            <p class="text-muted">Control and Customize all aspect of Your Instagram bots</p>
+                            <button class="btn">Learn More<i class="fas fa-angle-right align-items-center px-3"></i></button>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 d-flex flex-column flex-lg-row">
+                        <i class="bi bi-chat-quote fs-2 w-lg-75 h-lg-75 w-25 h-25 m-2" style="color: #6E5AE3;"></i>
+                        <div>
+                            <h3 class="fw-bolder">Simple</h3>
+                            <p class="text-muted">VividMind is very simple to use and many very easy to learn features</p>
+                            <button class="btn">Learn More<i class="fas fa-angle-right align-items-center px-3"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-column flex-lg-row">
+                        <i class="bi bi-shield-check fs-2 w-lg-75 h-lg-75 w-25 h-25 m-2" style="color: #6E5AE3;"></i>
+                        <div>
+                            <h3 class="fw-bolder">Secure</h3>
+                            <p class="text-muted">All of your instagram credentials is securely stored and hashed</p>
+                            <button class="btn">Learn More<i class="fas fa-angle-right align-items-center px-3"></i></button>
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+
+
+            <div id="Tips" class="Container_Fluid container-fluid py-5" style="margin-top: 150px; background-color: #e4e7eb !important;">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-4">
+                            <img src="./assets/images/landing-image.png" alt="" class="w-md-75 h-md-75 w-100 h-100" >
+                        </div>
+                        <div class="col-md-6 py-md-0 py-5">
+                            <i class="bi bi-journal-text fs-2 w-75 h-75" style="color: #6E5AE3;"></i>
+                            <h3 class="fw-bolder py-3">A few tips For Success</h3>
+                            <ul class="text-muted">
+                               <li> Create a script that is engaging</li>
+                               <li> Create a script that highlight your brand</li>
+                               <li> Choose delays between the user's message and your responseto maintain natural conversation</li>
+                               <li> chatbot commonly follow some variation of conversation flow: Welcome, Conversation, Pitch, Close, Thank them. For example: Pleae message the instagram @mystonershopz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Getting Started" class="container" style="margin-top: 100px;">
+                <div class="row">
+                    <div class="col-md-12 text-center m-auto">
+                        <h3 class="fw-bolder">Getting Started</h3>
+                        <p class="text-muted" style="font-size: medium;">in an idel world this website would'nd exist, a client world acknowledge the importance of having web copy before proin vitae ipsum vel ex finibus samper design starts</p>
+                    </div>
+
+                    <div class="col-md-4 text-center py-5">
+                        <i class="bi bi-person-check-fill fs-2" style="color: #6E5AE3;"></i>
+                        <div>
+                            <h3>Create an Account</h3>
+                            <p>On the right of your screen click the login/signup to create your account and get started</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center py-5">
+                        <i class="bi bi-robot fs-2" style="color: #6E5AE3;"></i>
+                        <div>
+                            <h3>Create your first bot</h3>
+                            <p>Once your dashboard open up, select add bot + and go through the step to create your forst bot!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center py-5">
+                        <i class="bi bi-gear-wide-connected fs-2" style="color: #6E5AE3;"></i>
+                        <div>
+                            <h3>Adjust Settings</h3>
+                            <p>After your bot is created , go through and adjust your preferred setting to fit your need</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center py-5">
+                        <i class="bi bi-coin fs-2" style="color: #6E5AE3;"></i>
+                        <div>
+                            <h3>Start Making Money</h3>
+                            <p>Once your settings are setup, click start and let your bot do work! Update and statistic will display on your dashboard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Container_Fluid container-fluid bg-dark text-light">
+                <div class="conatiner py-5">
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            All Right Reserved to VividMind 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title px-3 py-4">
+                    <a href="javascript:void(0);" class="right-bar-toggle float-end">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Settings</h5>
+                </div>
+
+                <!-- Settings -->
+                <hr class="mt-0">
+                <h6 class="text-center mb-0">Choose Layouts</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch">
+                        <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css">
+                        <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input theme-choice" type="checkbox"  id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css">
+                        <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+            
+                    <h6 class="mt-4">Select Custom Colors</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input theme-color" type="radio" name="theme-mode"
+                            id="theme-default" value="default" onchange="document.documentElement.setAttribute('data-theme-mode', 'default')" checked>
+                        <label class="form-check-label" for="theme-default">Default</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input theme-color" type="radio" name="theme-mode"
+                            id="theme-red" value="red" onchange="document.documentElement.setAttribute('data-theme-mode', 'red')">
+                        <label class="form-check-label" for="theme-red">Red</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input theme-color" type="radio" name="theme-mode"
+                            id="theme-green" value="green" onchange="document.documentElement.setAttribute('data-theme-mode', 'green')">
+                        <label class="form-check-label" for="theme-green">Green</label>
+                    </div>
+                </div>
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+                             
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        
+        <script src="assets/libs/morris.js/morris.min.js"></script>
+        <script src="assets/libs/raphael/raphael.min.js"></script>
+
+
+        <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+        <script src="assets/js/pages/dashboard.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
